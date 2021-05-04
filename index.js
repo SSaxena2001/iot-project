@@ -6,11 +6,14 @@ const port = process.env.PORT || 4000;
 
 const app = express();
 const client = new ThingSpeakClient();
+app.use(express.json());
 
-
-client.attachChannel(channelId, { writeKey:'yourWriteKey', readKey:'yourReadKey'}, (err, response)=>{
+const channelid=12397; //Public Channel is being used for now. 
+const fieldId=1;
+//Attaching channel is not nessesary for Public Channel.
+client.attachChannel(12397, (err, response)=>{
     if(!err){
-        console.log(`Connected the client at ${channelId}`);
+        console.log(`Connected the client at ${channelid}`);
         console.log(response);
     }
     else {
@@ -18,7 +21,7 @@ client.attachChannel(channelId, { writeKey:'yourWriteKey', readKey:'yourReadKey'
     }
 });
 
-client.getFieldFeed(channelId, fieldId, query, (err,response)=>{
+client.getLastEntryInFieldFeed(12397,fieldId,(err,response)=>{
     if(!err){
         console.log(`Getting the data for ${fieldId}`);
         console.log(response);
