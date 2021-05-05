@@ -21,16 +21,21 @@ client.attachChannel(12397, (err, response)=>{
     }
 });
 
+var fieldData;
+
 client.getLastEntryInFieldFeed(12397,fieldId,(err,response)=>{
     if(!err){
         console.log(`Getting the data for ${fieldId}`);
-        console.log(response);
+        fieldData=response;
     }
     else {
         console.error(err);
     }
 });
 
+app.get('/', (req, res)=>{
+    res.send(fieldData);
+});
 
 app.listen(port,()=>{
     console.log(`Listening at https://localhost:${port}`);
