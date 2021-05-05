@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(68,142,216,1);
+    color : #fff;
+}
+
+button{
+    background-color: rgba(198,255,198,1);
+    text-align: center;
+    margin: 3% 47%;
+    padding: 0.5rem 2.5rem;
+}
+h1 {
+    text-align: center;
+}
