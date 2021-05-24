@@ -1,0 +1,47 @@
+body {
+  height: 2000px;
+  background-color: #99e6ff;
+  background-image: linear-gradient(
+    to bottom left,
+    #99e6e6,
+    #b3ffff,
+    #66e0ff,
+    #80ccff
+  );
+}
+
+#frm {
+  width: 20%;
+  border-radius: 20px;
+  margin: 80px auto;
+  background: white;
+  padding: 100px;
+  box-shadow: 5px 10px 18px #00394d;
+}
+
+#user {
+  height: 2rem;
+  width: 15rem;
+  border: 0.1rem solid #000;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+
+#pass {
+  height: 2rem;
+  width: 15rem;
+  border: 0.1rem solid #000;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+
+#btn {
+  color: #fff;
+  background: #00394d;
+  border-radius: 5px;
+  width: 250px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-left: 8%;
+  border: 1px solid #00394d;
+}

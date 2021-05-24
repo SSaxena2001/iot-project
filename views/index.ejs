@@ -2,31 +2,39 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="css/styles.css" />
   <title>Intruder Detection</title>
+  <script src="scripts/index.js"></script>
 </head>
 
-<body>
-  <br>
-  <br>
+<body onload="JavaScript:AutoRefresh(5000);">
+  <br />
+  <br />
   <center>
-    <h1 style="font-family:Apple SD Gothic Neo; color:#00334d; font-size: 40px;"> <strong> INTRUDER DETECTION SYSTEM </strong> </h1>
+    <h1 style="
+          font-family: Apple SD Gothic Neo;
+          color: #00334d;
+          font-size: 40px;
+        ">
+      <strong> INTRUDER DETECTION SYSTEM </strong>
+    </h1>
   </center>
-  <br>
-  <br>
-  <button style="font-family:Apple SD Gothic Neo; " class="btn showtime" type="button" onclick="displayDate()"><strong> SHOW TIME </strong> </button>
+  <br />
+  <br />
+  <button style="font-family: Apple SD Gothic Neo" class="btn showtime" type="button" onclick="displayDate()">
+    <strong> SHOW TIME </strong>
+  </button>
   <p id="ShowTime"></p>
-  <br>
-  <br>
+  <br />
+  <br />
   <div class="alert">
     <span class="closebtn" onclick="this.parentElement.style.display='none';"></span>
     <center>
       <strong><%= motion %></strong>
     </center>
   </div>
-  <script src="scripts/index.js"></script>
 </body>
 
 </html>
